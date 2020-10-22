@@ -1,0 +1,12 @@
+<mat-toolbar color="primary" *ngIf="ctx$ | async as ctx">
+  <button mat-icon-button (click)="appNavigationService.sidenavToggle()">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span>{{ appNavigationService.title }}</span>
+  <span fxFlex="grow"></span>
+  <button mat-icon-button (click)="toggleManual()">
+    <mat-icon [ngClass]="{'app-online': ctx.isOnline, 'app-offline': !ctx.isOnline, 'app-manual': ctx.isManual}">
+      stop_circle
+    </mat-icon>
+  </button>
+</mat-toolbar>

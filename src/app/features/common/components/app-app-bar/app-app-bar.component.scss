@@ -1,0 +1,19 @@
+.app-online {
+  color: #26dd72;
+}
+
+.app-offline {
+  color: #b5b3b3;
+}
+
+.app-manual {
+  text-shadow:
+    -2px -2px 0 #bc2a2a,
+    2px -2px 0 #bc2a2a,
+    -2px 2px 0 #bc2a2a,
+    2px 2px 0 #bc2a2a;
+}
+
+mat-icon {
+  cursor: pointer;
+}

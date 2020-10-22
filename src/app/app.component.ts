@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
+import { AppNavigationService } from './features/common/services';
 
 @Component({
-  selector: 'app-root',
+  selector: 'rp-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'rp-pwa-test';
+  constructor(public appNavigationService: AppNavigationService) {
+  }
 }
